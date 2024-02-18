@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Adoption List</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="module" src="main.js"></script>
 </head>
 <body>
     <div class = "hero">
@@ -12,11 +13,32 @@
         <h2>Our friends need a home.</h2>
     </div>
 
-    <div class="filter-nav"></div>
-    <a href="#">All Animals</a>
-    <a href="#">Only dogs</a>
-    <a href="#">Only cats</a>
-    <a href="#">Only rabbitss</a>
+    <div class = "filter-nav">
+        <a href="#">All Animals</a>
+        <a href="#">Only dogs</a>
+        <a href="#">Only cats</a>
+        <a href="#">Only rabbits</a>
+    </div>
+    
+    <div class="animals"> 
+        <!-- dublicate me-->
+        
+        <!-- End dublicate me here-->
+    </div>
 
+    <template id="animal-card">
+        <div class="animal-card">
+            <div class="animal-card-text">
+                <h3>Meowsalot</h3>
+                <small><span class="age">3 Year olds</span> - <span class="species">Cat</span></small>
+                <p class="description">Meowsalot is a talkative friend that loves to play and is great with children. He is looking for a forever home today!</p>
+                <a href="#" class="primary-btn">Adopt Meowsalot</a>
+            </div>
+            <div class="animal-card-photo">
+                <img src="https://learnwebcode.github.io/pet-adoption-data/photos/meowsalot.webp" alt="A cat named Meowsalot">
+            </div>
+        </div>
+
+    </template>
 </body>
 </html>
